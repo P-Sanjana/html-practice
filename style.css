@@ -1,0 +1,29 @@
+h1 {text-align: center}
+div {
+    width:50%;
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    padding:15px;
+    border-style:double;
+    background-color:violet;
+    color:aquamarine;
+    margin:3rem;
+    border-block-end-color:blue;
+    margin-block-end: 1rem; 
+}
+p {
+    text-align:justify;
+}
+div.text {
+     background-color:palevioletred;
+     color:royalblue;
+     border-block-end: 2px;
+     border-style: none;  
+}
+#sec {
+    color:goldenrod;
+    border:1px solid black;
+    width:50%;
+    padding:10px;
+    margin: 3rem;
+}

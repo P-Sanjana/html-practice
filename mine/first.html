@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FirstProject</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link href="css/styles.css" rel="stylesheet">
+<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.5.0/css/allcss" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTK6S+L3BlXeVIU" 
+crossorigin="anonymous">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="shasha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">"
+<style>
+   
+  .nav>li>a.active,
+  .nav>li>a:hover,
+  .nav>li>a:focus{
+    background-color:black;
+  }
+  .glyphicon{
+    font-size:18px;
+  }
+  .glyphicon.glyphicon-calendar{
+      font-size:100px;
+  }
+  .column{
+      float:left;
+      width:25%;
+      padding:15px;
+  }
+  .row::after{
+      content:"";
+      clear:both;
+      display:table;
+  }
+    
+  .carousel-indicators>li {
+    height: 8px;
+    width: 8px;
+    border-radius:12px;
+  }
+  
+  ul{
+      list-style-type:none;
+  }
+  
+  body{
+      padding:5px;
+  }
+  .posts-thumbnails img{
+     
+       margin:10px; 
+    }
+    
+    
+.text-block {
+  position:relative;
+  bottom:42px;
+  right:-8px;
+    background: rgba(0, 0, 0, 0.6); 
+  color: #f1f1f1;
+ padding-left:10px;
+ padding-right:20px;
+ width: 238px;
+ height:6%;
+}
+.vivid{
+        width:"33.33%";
+    
+        float:left;
+        padding:0px;
+        position: relative;
+        background-color:black;
+        
+    }
+    .vivid:hover img{
+        opacity: 0.5;
+        position:relative;
+    }
+    .vivid:hover .work{
+        opacity:1;
+    }
+    .vivid img{
+        padding:5px;
+        display:block;
+        opacity:1;
+    }
+    .vivid img,.work{
+      -webkit-transition: opacity0.5s ease-out;
+      -moz-transition: opacity 0.5s ease-out;
+      -o-transition: opacity 0.5s ease-out;
+      transition: opacity 0.5s ease-out;
+    }
+    .work{
+        position: absolute;
+        color:white;
+        left:0;
+        top:25%;
+        right:0;
+        bottom:0;
+        font-size:16px;
+        text-align: center;
+        opacity:0;   
+    }
+    .thumbnails img{
+        width:100px;
+        height:100px;
+        margin:10px;
+    }
+    .vivid1{
+        width:110px;
+        height:100px;
+        float:left;
+        position: relative;
+        background-color:rgba(0,0,0,1);
+        
+    }
+    .text-block1 {
+  position:relative;
+  bottom:42px;
+  right:-8px;
+    background: rgba(0, 0, 0, 0.6); 
+  color: #f1f1f1;
+ padding-left:10px;
+ padding-right:20px;
+ width: 100px;
+ height:30%;
+}
+.vivid1:hover img{
+        opacity: 0.5;
+    }
+    .vivid1:hover{
+        opacity:1;
+    }
+    .vivid1 img{
+        padding:0;
+        left:20px;
+        display:block;
+        opacity:1;
+    }
+    .vivid1 img{
+      -webkit-transition: opacity 0.5s ease-out;
+      -moz-transition: opacity 0.5s ease-out;
+      -o-transition: opacity 0.5s ease-out;
+      transition: opacity 0.5s ease-out;
+    }
+    #mydiv{
+        width:100%;
+        padding:30px 0;
+        display:none;
+    }
+    .posts-thumbnails1 img{
+     width:200px;
+     height:200px;
+     margin:10px; 
+  }
+  .text-block2 {
+  position:relative;
+  bottom:30px;
+  right:-10px;
+    background: rgba(0, 0, 0, 0.6); 
+  color: #f1f1f1;
+ padding-left:10px;
+ padding-right:20px;
+ width: 200px;
+ height:2%;
+}
+.vivid2{
+        width:210px;
+        float:left;
+        padding:0px;
+        position: relative;
+        background-color:black;
+        
+    }
+    .vivid2:hover img{
+        opacity: 0.5;
+    }
+    .vivid2:hover .work{
+        opacity:1;
+    }
+    .vivid2 img{
+        padding:5px;
+        display:block;
+        opacity:1;
+    }
+    .vivid2 img,.work{
+      -webkit-transition: opacity0.5s ease-out;
+      -moz-transition: opacity 0.5s ease-out;
+      -o-transition: opacity 0.5s ease-out;
+      transition: opacity 0.5s ease-out;
+    } 
+    .column1{
+      float:left;
+      width:15%;
+      padding:80px;
+    }
+    .column2{
+      float:left;
+      width:15%;
+      padding:80px;
+    }
+    .vivid3{
+        width:"200px";
+    
+        float:left;
+        padding:0;
+        position: relative;
+        background-color:black;
+        
+    }
+    .vivid3:hover img{
+        opacity: 0.5;
+    }
+    
+    .vivid3 img{
+        padding:0;
+        
+        display:block;
+        opacity:1;
+    }
+    .vivid3 img{
+      -webkit-transition: opacity0.5s ease-out;
+      -moz-transition: opacity 0.5s ease-out;
+      -o-transition: opacity 0.5s ease-out;
+      transition: opacity 0.5s ease-out;
+    }
+</style>
+</head>
+<body style="padding:1rem">
+    <nav class="navbar navbar-dark navbar-expand-sm  fixed-top" style="background-color:rgb(41, 39, 39)">
+        <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+           <div class="collapse navbar-collapse navbar-left" id="Navbar">
+                  <ul class="nav nav-pills" class="navbar-nav mr-auto" class="nav navbar-nav navbar-left">
+                  <li class="nav-item">
+                      <a class="nav-link" data-toggle="pill" href="#" style="color:white;font-size:170%">EVENTS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" data-toggle="pill" href="#" style="color:white;font-size:170%">CUISINES</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" data-toggle="pill" href="#" style="color:white;font-size:170%">WORKSHOPS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" data-toggle="pill" href="#" style="color:white;font-size:170%">SPORTS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" data-toggle="pill" href="#" style="color:white;font-size:170%">VIRTUOSOS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" data-toggle="pill" href="#" style="color:white;font-size:170%">VICINITY</a>
+                  </li>
+                </ul>
+           </div>
+           <div class="collapse navbar-collapse navbar-right" id="Navbar">
+        <ul  class="nav nav-pills" class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="#"><span style="color:white;max-width:160%"class="glyphicon glyphicon-search"></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span style="color:white"class="glyphicon glyphicon-bell"></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span style="color:white"class="glyphicon glyphicon-user"></span></a></li>
+                </ul>    
+        </div>
+    </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+                <div class="carousel-item active">
+                        
+                        <img class="d-block w-100" src="cover image 2.jpg" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                            
+                        <img class="d-block w-100" src="cover image 5.jpg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                            
+                        <img class="d-block w-100" src="cover image 6.jpg" alt="Third slide">
+                      </div>
+                      <div class="carousel-item">
+                         
+                      <img class="d-block w-100" src="cover image 7.jpg" alt="Fourth slide">
+                    </div>
+                    <div class="carousel-item">
+                        
+                    <img class="d-block w-100" src="cover image 10.jpg" alt="Fifth slide">
+                  </div>
+                  <div class="carousel-item">
+                     
+                  <img class="d-block w-100" src="cover image 12.jpg" alt="Sixth slide">
+                </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="carousel-item">
+            <img src="..." alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>...</h5>
+              <p>...</p>
+            </div>
+          </div>
+          <br>
+          <h1 style="padding-top: 5rem">Trending in Bangalore</h1>
+          
+          <div class="posts-thumbnails">
+                <div class="containers">
+                <div class="row">
+                    <div class="column">
+                            <div class="vivid">
+                        <a href="#"><img  src="comedy2.jpg"></a>
+                        <div class="work"><button style="background-color:rgb(0,0,0)"><b>Interested</b></button></div>
+           <div class="text-block">
+               <h4>THE IMPROV</h4>  
+            </div>
+        </div></div>
+            <div class="column">
+                    <div class="vivid">
+                    <a href="#"  class="image"> <img   src="cook3.jpg"></a>
+                    <div class="work"><button style="background-color:rgb(0, 0, 0)"><b>Interested</b></button></div>
+            <div class="text-block">
+            <h4>THE ORGANIC WORLD</h4>
+            </div></div></div>
+            <div class="column">
+                    <div class="vivid">
+                    <a href="#"  class="image"> <img  src="story telling.jpg"></a>
+                    <div class="work"><button style="background-color:rgb(0, 0, 0)"><b>Interested</b></button></div>
+                    <div class="text-block">
+                    <h4>TINDER TALES</h4>
+                    </div></div></div>
+            <div class="column">
+                            <div class="vivid">
+                            <a href="#"  class="image"><img  src="camp1.jpg"></a>
+                            <div class="work"><button style="background-color:rgb(0, 0, 0)"><b>Interested</b></button></div>
+                            <div class="text-block">
+                            <h4>AWAY FROM THE CITY</h4>
+                            </div></div></div>
+                            </div>
+            </div>
+        </div></div>
+         <h1 style="padding-top: 5rem">Browse by Genres</h1>
+         <div class="thumbnails">
+                <div class="containers">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="vivid1">
+        <a href="#"><img src="co.png"></a>
+        <div class="text-block1">
+                <h4>Comedy</h4>  
+             </div>
+         </div></div>
+         <div class="col-md-2"><div class="vivid1">
+        <a href="#"><img src="cy.jpg"></a>
+        
+        <div class="text-block1">
+                <h4>Cycling</h4>  
+             </div>
+         </div></div>
+         <div class="col-md-2"><div class="vivid1">
+                <a href="#"><img src="co2.jpg"></a>
+                
+                <div class="text-block1">
+                        <h4>Cooking</h4>  
+                     </div>
+                 </div></div>
+                 <div class="col-md-2"><div class="vivid1">
+                        <a href="#"><img src="dance 2.jpg"></a>
+                        
+                        <div class="text-block1">
+                                <h4>Dance</h4>  
+                             </div>
+                         </div></div>
+                         <div class="col-md-2"><div class="vivid1">
+                            <a href="#"><img src="g.jpg"></a>
+                            
+                            <div class="text-block1">
+                                    <h4>Sports</h4>  
+                                 </div>
+                             </div></div>
+                             <div class="col-md-2"><div class="vivid1">
+                                <a href="#"><img src="mara.jpg"></a>
+                                
+                                <div class="text-block1">
+                                        <h4>Marathon</h4>  
+                                     </div>
+                                 </div></div>
+                                 <div class="col-md-2"><div class="vivid1">
+                                    <a href="#"><img src="mu1.jpg"></a>
+                                    
+                                    <div class="text-block1">
+                                            <h4>Music</h4>  
+                                         </div>
+                                     </div></div> 
+                                     <div class="col-md-2"><div class="vivid1">
+                                        <a href="#"><img src="wr.jpg"></a>
+                                        
+                                        <div class="text-block1">
+                                                <h4>Writings</h4>  
+                                             </div>
+                                         </div></div>  
+                                         <div class="col-md-2"><div class="vivid1">
+                                            <a href="#"><img src="recite.jpg"></a>
+                                            
+                                            <div class="text-block1">
+                                                    <h4>Poet Reciting</h4>  
+                                                 </div>
+                                             </div></div> 
+                                             <div class="col-md-2"><div class="vivid1">
+                                                <a href="#"><img src="pai.jpg"></a>
+                                                
+                                                <div class="text-block1">
+                                                        <h4>Painting</h4>  
+                                                     </div>
+                                                 </div></div>
+                                                 <div class="col-md-2"><div class="vivid1">
+                                                    <a href="#"><img src="convention2.jpg"></a>
+                                                    
+                                                    <div class="text-block1">
+                                                            <h4>Conventions</h4>  
+                                                         </div>
+                                                     </div></div> 
+                                                     <div class="col-md-2"><div class="vivid1">
+                                                        <a href="#"><img src="clg.jpg"></a>
+                                                        
+                                                        <div class="text-block1">
+                                                                <h4>College Fests</h4>  
+                                                             </div>
+                                                         </div></div>       
+        </div></div></div>
+        <button style="background-color: black;color:white;font-size:18px" onclick="myFunction()">Show more</button>
+        <div id="mydiv">
+            <div class="row">
+                <div class="col-md-1">
+                    <a href="#"><h3><b>Experiences</b></h3></a>
+                </div><div class="col-md-1">
+                    <a href="#"><h3><b>Camping</b></h3></a>
+                </div><div class="col-md-1">
+                    <a href="#"><h3><b>Meet , Greet & Date</b></h3></a>
+                </div><div class="col-md-1">
+                    <a href="#"> <h3><b>Arts</b></h3></a>
+                </div><div class="col-md-1">
+                    <a href="#"> <h3><b>Parties</b></h3></a>
+                </div><div class="col-md-1">
+                    <a href="#"> <h3><b>Storytelling</b></h3></a>
+                </div><div class="col-md-1">
+                    <a href="#"> <h3><b>Screening</b></h3></a>
+                </div><div class="col-md-1">
+                    <a href="#"> <h3><b>Workouts</b></h3></a>
+                </div><div class="col-md-1">
+                    <a href="#"> <h3><b>Flea Markets</b></h3></a>
+                </div><div class="col-md-1">
+                    <a href="#"> <h3><b>Talks</b></h3></a>
+                </div><div class="col-md-1">
+                    <a href="#"> <h3><b>Product Launches</b></h3></a>
+                </div><div class="col-md-1">
+                    <a href="#"> <h3><b>Badminton</b></h3></a>
+                </div><div class="col-md-1">
+                    <a href="#"> <h3><b>Football</b></h3></a>
+                </div><div class="col-md-1">
+                    <a href="#"> <h3><b>Photography</b></h3></a>
+                </div><div class="col-md-1">
+                    <a href="#"> <h3><b>Themed Lunch</b></h3></a>
+                </div>
+            </div>
+        </div>
+        <script>
+        function myFunction(){
+            var x=document.getElementById("mydiv");
+            if(x.style.display!="none"){
+                x.style.display="none";
+            }
+           else {
+                x.style.display="block";
+            }
+        }
+        </script>
+        <h1 style="padding-top: 5rem">Make a Schedule</h1>
+      
+        <div class="row"> <h2 style="padding:10px">Today</h2>
+            <div class="col-md-3">
+        <a href="#"><img src="calendar today.jpg" style="width:120px;height:120px"></a></div><br>
+        <h2>Tomorrow</h2>
+        <div class="col-md-3">
+        <a href="#"><img src="calendar tomo.jpg" style="width:120px;height:120px"></a></div> 
+        <h2>Weekend</h2>  
+        <div class="col-md-3">
+                <a href="#"><img src="calendar weekend.jpg" style="width:120px;height:120px"></a></div>   
+    </div>
+         <h1 style="padding-top: 5rem">In Dilemma?</h1>
+         <h2>We would ask you some questions and based on that we recommend you some events</h2>
+         <a href="#" style="font-size:20px">click here to proceed</a>
+         <h1 style="padding-top: 5rem">Virtuosos</h1>
+         <div class="row"><div class="posts-thumbnails1">
+             <div class="column1"><div class="vivid2">
+                 <a href="#"><img src="ken.jpg"></a>
+                 <div class="work1"><button style="background-color:rgb(0, 0, 0)"><b>Follow</b></button></div>
+                 <div class="text-block2">
+                        <h4>Kenny Sebastian</h4><h4>4 events</h4><p style="font-size:14px">With a great sense of humour touching...</p>
+             </div>
+            </div></div>
+            <div class="column1"><div class="vivid2">
+                <a href="#"><img src="sumukhi suresh.jpg"></a>
+                <div class="work1"><button style="background-color:rgb(0, 0, 0)"><b>Follow</b></button></div>
+                <div class="text-block2">
+                       <h4>Sumukhi Suresh</h4><h4>3 events</h4><p style="font-size:14px">One of the most sought after young talent...</p>
+            </div>
+           </div></div>
+           <div class="column1"><div class="vivid2">
+            <a href="#"><img src="bhuvan.jpg"></a>
+            <div class="work1"><button style="background-color:rgb(0, 0, 0)"><b>Follow</b></button></div>
+            <div class="text-block2">
+                   <h4>Bhuvan Bam</h4><h4>2 events</h4><p style="font-size:14px">Aka BB ki vines,one-man-army,a youtuber,an artist...</p>
+        </div>
+       </div></div>
+       <div class="column1"><div class="vivid2">
+        <a href="#"><img src="sonali thakker.jpg"></a>
+        <div class="work1"><button style="background-color:rgb(0, 0, 0)"><b>Follow</b></button></div>
+        <div class="text-block2">
+               <h4>Sonali Thakker</h4><h4>1 events</h4><p style="font-size:14px">Part-time stock broker,a dance enthusiast and a...</p>
+    </div>
+   </div></div>
+   <div class="column1"><div class="vivid2">
+    <a href="#"><img src="sahil.jpg"></a>
+    <div class="work1"><button style="background-color:rgb(0, 0, 0)"><b>Follow</b></button></div>
+    <div class="text-block2">
+           <h4>Sahil Shah</h4><h4>2 events</h4><p style="font-size:14px">A chils stuck in man's body and let his inner problem...</p>
+</div>
+</div></div>
+<div class="column1"><div class="vivid2">
+    <a href="#"><img src="anish.jpg"></a>
+    <div class="work1"><button style="background-color:rgb(0, 0, 0)"><b>Follow</b></button></div>
+    <div class="text-block2">
+           <h4>Sahil Shah</h4><h4>2 events</h4><p style="font-size:14px">A chils stuck in man's body and let his inner problem...</p>
+</div>
+</div></div>
+         </div></div>
+         <a href="#" style="font-size:20px">View all</a>
+         <h1 style="padding-top: 5rem">Vicinity</h1>
+         <div class="row"><div class="posts-thumbnails1">
+            <div class="column2"><div class="vivid3">
+                <a href="#"><img src="venue 1.jpg"></a>
+               
+           </div>
+           <p style="color:black;font-size:20px">Murphy's Brewhouse</p>
+           <p style="color:black;font-size:20px">6 events</p>
+        </div>  
+            <div class="column2"><div class="vivid3">
+                <a href="#"><img src="venue 2.jpg"></a>
+           </div>
+           <p style="color:black;font-size:20px">F&K Bistroclub</p>
+           <p style="color:black;font-size:20px">8 events</p></div>
+           <div class="column2"><div class="vivid3">
+            <a href="#"><img src="xp.png"></a>
+       </div>
+       <p style="color:black;font-size:20px">ONE</p>
+       <p style="color:black;font-size:20px">4 events</p></div>
+       <div class="column2"><div class="vivid3">
+        <a href="#"><img src="xp4.jpg"></a>
+   </div>
+   <p style="color:black;font-size:20px">Pouch Nation</p>
+   <p style="color:black;font-size:20px">1 events</p></div>
+   <div class="column2"><div class="vivid3">
+    <a href="#"><img src="downtown.png"></a>
+</div>
+<p style="color:black;font-size:20px">The DownTown Flea</p>
+<p style="color:black;font-size:20px">2events</p></div>
+<div class="column2"><div class="vivid3">
+    <a href="#"><img src="cooking5.jpg"></a>
+</div>
+<p style="color:black;font-size:20px">RPB Cook studio</p>
+<p style="color:black;font-size:20px">14 events</p></div>
+           </div></div>
+           <h3>Contact Us</h3>
+               <hr>
+            </div>
+        </div>
+
+        <div >
+           <div >
+              <h3>Location Information</h3>
+           </div>
+            <div class="col-12 col-sm-4 offset-sm-1">
+                   <h5><b>Our Address</b></h5>
+                    <address style="font-size: 100%">
+                        121, , RTC “X” Road<br>
+                        Narayanguda, Near Traffic Signal<br>
+                        HYDERABAD<br>
+		              tel: +91-1234 5678<br>
+		              tel: +91-4321 8765<br>
+		              Envelope:
+                        <a href="mailto:admin@petshop.com">admin@petshop.com</a>
+		           </address>
+            </div>
+            <div class="col-12 col-sm-6 offset-sm-1">
+                <h5>Map of our Location</h5>
+            </div>
+            <div class="col-12 col-sm-11 offset-sm-1">
+                <!Button group goes here>
+                
+                    
+            </div>
+        </div>
+
+        <div class="row row-content">
+           <div class="col-12">
+              <h3>Send us your Feedback</h3>
+           </div>
+            <div class="col-12 col-md-9">
+                <!Form goes here>
+
+                
+
+                </form>
+
+            </div>
+             <div class="col-12 col-md">
+            </div>
+       </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-7 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address>
+                        121, , RTC “X” Road<br>
+                        Narayanguda, Near Traffic Signal<br>
+                        HYDERABAD<br>
+                      <i class="fa fa-phone fa-lg"></i>: +91-1234 5678<br>
+                      <i class="fa fa-fax fa-lg"></i>: +91-4321 8765<br>
+                      <i class="fa fa-envelope fa-lg"></i>: 
+                      <a href="mailto:admin@petshop.net">admin@petshop.net</a>
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4 align-self-center">
+                    <div class="text-center">
+                        <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">             
+                <div class="col-auto">
+                    <p>© Copyright 2018 The petshop@Full Stack Development</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+
+        </body>
+</html>

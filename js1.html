@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Document</title>
+    <script>
+    function dataCheck(){
+        alert("iam in function");
+        var userinput=document.getElementById("myid").value;
+        if(userinput == 'hey'){
+        alert("hey was entered");
+        }
+        else{
+        alert("wrong text");
+        }
+    }
+        </script>
+</head>
+<body>
+     <form>
+         <input type="text" id="myid" value="userinput">
+         <input type="button" onclick="dataCheck()" value="submit">
+     </form> 
+    
+</body>
+</html>

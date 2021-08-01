@@ -1,0 +1,28 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size:0.9rem;
+    padding: 3px;
+    margin:5px;
+}
+header,footer {
+    padding:10px;
+    color:violet;
+    background-color:steelblue;
+    margin:5px;
+}
+section {
+    margin:15px;
+    padding: 10px;
+    background-color: brown;
+}
+article {
+    margin:15px;
+    padding: 10px;
+    background-color:goldenrod; 
+}
+nav ul {
+    padding: 0;
+}
+nav ul li {
+     display:inline;
+}
